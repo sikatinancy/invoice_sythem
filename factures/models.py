@@ -38,7 +38,6 @@ class Invoice(models.Model):
         ('R', 'RECEIPT'),
         ('P', 'PROFORMA INVOICE'),
         ('F', 'INVOICE')
-
     )
     
     customer = models.ForeignKey(Customer, on_delete=models.PROTECT)
